@@ -13,7 +13,7 @@ body {
 
 .form-container {
     display: grid;
-    grid-template-rows: 300px 580px 100px;
+    grid-template-rows: 200px 580px 150px;
 }
 
 h1 {
@@ -34,6 +34,9 @@ h3 {
 p {
     text-align: left;
     padding-left: 55px;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #414141;
 }
 
 .example {

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="./form/form.css" rel="stylesheet" type="text/css">
-    <title>Форма жалобы</title>
+    <title>Форма посадки | Двор</title>
 </head>
 
 <body>
@@ -13,17 +13,17 @@
 <div class="form-container">
 
     <div class="head-wr">
-        <h1>Подай жалобу!</h1>
+        <h1>Посади дерево!</h1>
     </div>
 
     <div class="form-wr">
         <form id="form">
             <div class="form">
-                <h3>Фамилия</h3>
+                <h3>Фамилия <span style="color:red">*</span></h3>
                 <label>
                     <input placeholder="Ваша фамилия" type="text">
                 </label>
-                <h3>Имя</h3>
+                <h3>Имя <span style="color:red">*</span></h3>
                 <label>
                     <input placeholder="Ваше имя" type="text">
                 </label>
@@ -31,15 +31,13 @@
                 <label>
                     <input placeholder="+7 (123) 456-78-90" type="tel">
                 </label>
-                <h3>E-mail</h3>
+                <h3>E-mail <span style="color:red">*</span></h3>
                 <label>
                     <input placeholder="example@mail.ru" type="email">
                 </label>
-                <h3>Фотография нарушения</h3>
                 <p>
-                    <label class="custom_upload">
-                        Загрузить файл
-                        <input type="file">
+                    <label>
+                        <input type="checkbox"> Нужна помощь в посадке
                     </label>
                 </p>
                 <button class="submit_button"> Отправить</button>
@@ -50,7 +48,9 @@
     <div class="foot-wr">
         Нажимая на кнопку, вы даете согласие на <a
             href="https://docs.google.com/document/d/1rchmF8r8BNF53UA7WyBw-ruiqa5k_SQNp3RUxxCsoDY/edit" target="_blank">обработку
-        персональных данных и соглашаетесь c политикой конфиденциальности</a>
+        персональных данных</a> и соглашаетесь c <a
+            href="https://docs.google.com/document/d/1rchmF8r8BNF53UA7WyBw-ruiqa5k_SQNp3RUxxCsoDY/edit" target="_blank">политикой
+        конфиденциальности</a>
     </div>
 
 </div>
