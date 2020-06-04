@@ -13,15 +13,25 @@ body {
 
 .form-container {
     display: grid;
-    grid-template-rows: 200px 580px 150px;
+    grid-template-rows: 300px 580px 150px;
 }
 
-h1 {
+.head-wr {
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 15px;
+    width: 600px;
+    color: #414141;
+}
+
+#head-wr h1 {
     font-weight: 500;
     font-size: 3em;
 }
 
-h3 {
+#form h3 {
     text-align: left;
     padding-left: 55px;
     margin-top: 0;
@@ -31,26 +41,12 @@ h3 {
     color: #414141;
 }
 
-p {
+#form p {
     text-align: left;
     padding-left: 55px;
     font-weight: 500;
     font-size: 1.3em;
     color: #414141;
-}
-
-.example {
-    text-align: left;
-    padding-left: 40px;
-    margin-bottom: 10px;
-    color: #ABABAB;
-    font-size: 12px;
-}
-
-.head-wr {
-    grid-row: 1;
-    align-self: center;
-    justify-self: center;
 }
 
 .form-wr {
@@ -87,11 +83,12 @@ input[type="email"] {
     display: none;
 }
 
-.custom_upload {
+#form .custom_upload {
     border-radius: 5px;
     border: 1px solid #000000;
     display: inline-block;
     padding: 10px 10px;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -120,7 +117,7 @@ input[type="email"] {
 }
 
 @media screen and (max-width: 600px) {
-    h3 {
+    #form h3 {
         text-align: left;
         padding-left: 30px;
         margin-top: 0;
@@ -130,9 +127,17 @@ input[type="email"] {
         color: #414141;
     }
 
-    p {
+    #form p {
         text-align: left;
         padding-left: 30px;
+    }
+
+    .head-wr {
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+        width: 300px;
+        text-align: center;
     }
 
     #form .form {
